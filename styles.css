@@ -28,12 +28,13 @@ hr {
 	width: 20%;
 	background: black;
 	height: 5px;
+	margin-bottom: 3vh;
 }
 /* ---- grid ---- */
 
 .grid {
 	background: #ddd;
-	margin: 5rem;
+	margin: 0 4vw;
 }
 
 /* clear fix */

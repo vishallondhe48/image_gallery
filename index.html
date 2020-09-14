@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1><span style="color: rgb(247, 28, 65); font-size: 3rem;">I</span>mage gallery</h1>
+
+        <hr>
+
+    </div>
+
+
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+            <img src="./images/bich-tuyen-egOYDJUSeP0-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/jesiel-rubio-4QFkj1L_sew-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/jeswin-thomas-t69xr-PKILs-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/kermen-tutkunova-xH0-NdcwNlU-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/laura-chouette-c4lqU0lSFmc-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/michael-d-beckwith-EpGsRs-s3JU-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/moran-V_5W1vA8GeA-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/riyan-ong-fLa1MkdnbV8-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/riyan-ong-fLa1MkdnbV8-unsplash.jpg" />
+        </div>
+        <div class="grid-item">
+            <img src="./images/xps-YNliXm_hMn8-unsplash.jpg" />
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script>
+
+        // init Masonry after all images have loaded
+        var $grid = $('.grid').masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-sizer'
+        });
+        // layout Masonry after each image loads
+        $grid.imagesLoaded().progress(function () {
+            $grid.masonry();
+        });
+    </script>
+
+    <footer>
+        &copy Created by Vishal londhe
+    </footer>
+</body>
+
+</html>

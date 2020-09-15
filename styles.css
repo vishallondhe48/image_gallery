@@ -19,17 +19,11 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
-h1 {
+.header img {
+	width: 25vw;
 	padding: 2rem;
 }
 
-hr {
-	width: 20%;
-	background: black;
-	height: 5px;
-	margin-bottom: 3vh;
-}
 /* ---- grid ---- */
 
 .grid {
@@ -80,8 +74,8 @@ img:hover {
 	.grid-item {
 		width: 50%;
 	}
-	hr {
-		width: 30%;
+	.header img {
+		width: 50vw;
 	}
 }
 @media (max-width: 480px) {
@@ -89,7 +83,7 @@ img:hover {
 	.grid-item {
 		width: 100%;
 	}
-	hr {
-		width: 40%;
+	.header img {
+		width: 70vw;
 	}
 }
